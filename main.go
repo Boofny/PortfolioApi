@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/Boofny/goLive"
+	"goliveDocker/rating"
 	"github.com/Boofny/goLive/middleware"
 )
 
@@ -19,6 +20,7 @@ func main() {
 	e.Chain(
 		middleware.CORS(),
 		middleware.Logger(),
+		rating.RateLimit(),
 	)
 
 	// Example get req
@@ -50,7 +52,7 @@ func main() {
 
 		return c.PrettyJSON(http.StatusOK, map[string]any{
 			"Name": "Hello " + data.Name,
-			"Email": data.Email,
+			"Email": "EMAIL: " + data.Email,
 		})
 
 	})
