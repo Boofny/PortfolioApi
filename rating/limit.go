@@ -8,7 +8,7 @@ import (
 	"golang.org/x/time/rate"
 )
 
-var limiter = rate.NewLimiter(20, 40)
+var limiter = rate.NewLimiter(1, 15)
 
 func RateLimit(allowedOrigins... string) goliveMiddleware.Middleware {
 	return func (next http.Handler) http.Handler {
