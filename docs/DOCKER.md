@@ -14,7 +14,7 @@ docker run -p 8000:8000 -e PORT=8000 boofny/golive-docker
     curl -X POST http://localhost:8000/posting    
     -H "Content-Type: application/json"    
     -d '{"name": "john", "email": "johnBram@gmail.com"}'
-  ```
+    ```
 - [/v1/ping](http://localhost:8000/v1/ping) <-- For route grouping
 
 ### Get a more info on my docker repo
