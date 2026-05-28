@@ -1,8 +1,7 @@
 # GoLive
-
 A lightweight HTTP framework built in Go.
 
-## Live API
+## Live API example
 
 Base URL:
 ```
