@@ -5,7 +5,7 @@ A lightweight HTTP framework built in Go.
 
 Base URL:
 ```
-https://golive-production.up.railway.app subject to change
+https://golive-production.up.railway.app subject to change soon
 ```
 
 ### Routes
