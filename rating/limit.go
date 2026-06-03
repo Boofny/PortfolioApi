@@ -4,7 +4,7 @@ package rating
 import (
 	"net/http"
 
-	goliveMiddleware "github.com/Boofny/goLive/middleware"
+	goliveMiddleware "github.com/Boofny/golive"
 	"golang.org/x/time/rate"
 )
 
